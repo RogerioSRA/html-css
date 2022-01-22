@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Scroll de Tabela</title>
+   <style>
+       body{
+           height: 430px;
+           font-family: Arial, Helvetica, sans-serif;
+           border: 5px solid red;
+       }
+       section{
+        display: block;
+        width: 500px;
+        float: left;
+        background-color: lightgray;
+       }
+       aside{
+           display: block;
+           width: 200px;
+           height: 430px;
+           float: right;
+           background-color: lightgreen;
+           overflow-y: auto;
+       }
+       table{
+           border-collapse: collapse;
+       }
+       caption{
+           font-size: 1.2em;
+           font-weight: bolder;
+           padding: 20px;
+       }
+       th, td{
+           border: 1px solid black;
+           padding: 0px 30px;
+
+       }
+       tr:nth-child(even){
+           background-color: lightgray;
+       }
+       #container{
+           position: relative;
+           overflow-x: auto;
+       }
+   </style>
+</head>
+<body>
+    <section>
+        
+        <h1>Tabelas em Telas Pequenas</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis veritatis quae perspiciatis fuga non animi itaque eos quia voluptas natus. Suscipit at alias ipsam non maxime quisquam sit error ratione!</p>
+        <div id="container">
+            <table>
+                <caption>Tabelas Responsivas</caption>
+                <colgroup>
+                    <col id="produto">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Jan</th>
+                        <th>Fev</th>
+                        <th>Mar</th>
+                        <th>Abr</th>
+                        <th>Mai</th>
+                        <th>Jun</th>
+                        <th>Jul</th>
+                        <th>Ago</th>
+                        <th>Set</th>
+                        <th>Out</th>
+                        <th>Nov</th>
+                        <th>Dez</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>TV 40"</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>09</td>
+                        <td>14</td>
+                        <td>32</td>
+                        <td>21</td>
+                        <td>17</td>
+                        <td>07</td>
+                        <td>01</td>
+                        <td>05</td>
+                        <td>07</td>
+                    </tr>
+                    <tr>
+                        <td>Geladeira</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>09</td>
+                        <td>14</td>
+                        <td>32</td>
+                        <td>21</td>
+                        <td>17</td>
+                        <td>07</td>
+                        <td>01</td>
+                        <td>05</td>
+                        <td>07</td>
+                    </tr>
+                    <tr>
+                        <td>Micro-Ondas</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>09</td>
+                        <td>14</td>
+                        <td>32</td>
+                        <td>21</td>
+                        <td>17</td>
+                        <td>07</td>
+                        <td>01</td>
+                        <td>05</td>
+                        <td>07</td>
+                    </tr>
+                    <tr>
+                        <td>MicroSystem</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>09</td>
+                        <td>14</td>
+                        <td>32</td>
+                        <td>21</td>
+                        <td>17</td>
+                        <td>07</td>
+                        <td>01</td>
+                        <td>05</td>
+                        <td>07</td>
+                    </tr>
+                    <tr>
+                        <td>Fogão</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>09</td>
+                        <td>14</td>
+                        <td>32</td>
+                        <td>21</td>
+                        <td>17</td>
+                        <td>07</td>
+                        <td>01</td>
+                        <td>05</td>
+                        <td>07</td>
+                    </tr>
+                    <tr>
+                        <td>Rack</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>09</td>
+                        <td>14</td>
+                        <td>32</td>
+                        <td>21</td>
+                        <td>17</td>
+                        <td>07</td>
+                        <td>01</td>
+                        <td>05</td>
+                        <td>07</td>
+                    </tr>
+                    <tr>
+                        <td>Home-Theater</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>09</td>
+                        <td>14</td>
+                        <td>32</td>
+                        <td>21</td>
+                        <td>17</td>
+                        <td>07</td>
+                        <td>01</td>
+                        <td>05</td>
+                        <td>07</td>
+                    </tr>
+                    <tr>
+                        <td>Samsung Galaxy 12</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>09</td>
+                        <td>14</td>
+                        <td>32</td>
+                        <td>21</td>
+                        <td>17</td>
+                        <td>07</td>
+                        <td>01</td>
+                        <td>05</td>
+                        <td>07</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="texto">
+    </section>
+        <aside>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis veritatis quae perspiciatis fuga non animi itaque eos quia voluptas natus. Suscipit at alias ipsam non maxime quisquam sit error ratione!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis veritatis quae perspiciatis fuga non animi itaque eos quia voluptas natus. Suscipit at alias ipsam non maxime quisquam sit error ratione!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis veritatis quae perspiciatis fuga non animi itaque eos quia voluptas natus. Suscipit at alias ipsam non maxime quisquam sit error ratione!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis veritatis quae perspiciatis fuga non animi itaque eos quia voluptas natus. Suscipit at alias ipsam non maxime quisquam sit error ratione!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis veritatis quae perspiciatis fuga non animi itaque eos quia voluptas natus. Suscipit at alias ipsam non maxime quisquam sit error ratione!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis veritatis quae perspiciatis fuga non animi itaque eos quia voluptas natus. Suscipit at alias ipsam non maxime quisquam sit error ratione!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis veritatis quae perspiciatis fuga non animi itaque eos quia voluptas natus. Suscipit at alias ipsam non maxime quisquam sit error ratione!</p>
+    </aside>
+    </div>
+    
+</body>
+</html>
